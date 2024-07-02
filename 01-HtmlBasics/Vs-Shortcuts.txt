@@ -1,0 +1,8 @@
+1-ALT + SHIFT + F = Kodlari seliqeye salmaq
+2-CTRL + ALT + asagi ve ya yuxari ox = imleci yuxari ve ya asagi teref boyudur
+3-ALT + yuxari ve ya asagi ox = kodu asagi ve ya yuxari surusdurmek ucun
+4-FN + sag ve sol ox = setrin basina ve ya sonuna aparir
+5-CTRL + D = eyni yazilari secerek sile ve ya degistirmek olar
+6-CTRL + SHIFT + K = setir silmek
+7-CTRL + ENTER = Yeni setir elave etmek
+8-CTRL + / = yorum setri acila biler yaxud da her hansi setri yorum setrine cevirmek olar
