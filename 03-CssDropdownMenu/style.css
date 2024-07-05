@@ -1,0 +1,56 @@
+ul {
+  list-style-type: none;
+  background-color: rgb(81, 80, 80);
+  width: 100%;
+}
+
+ul li {
+  display: inline-block;
+  padding: 15px;
+}
+
+ul li:hover {
+  background-color: red;
+  transition: 0.3s;
+}
+
+ul li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+i {
+  margin-right: 10px;
+}
+
+#news-content {
+  position: absolute;
+  display: none;
+  z-index: 1;
+  margin-top: 15px;
+  margin-left: -15px;
+  color: white;
+  width: 100px;
+}
+
+#news-content li {
+  display: block;
+  margin-left: -25px;
+}
+
+.hover-news:hover #news-content {
+  display: block;
+}
+
+#news3-content {
+  position: absolute;
+  display: none;
+  z-index: 1;
+  margin-left: 110px;
+  margin-top: -33px;
+  width: 100px;
+}
+
+.hover-news3:hover #news3-content {
+  display: block;
+}

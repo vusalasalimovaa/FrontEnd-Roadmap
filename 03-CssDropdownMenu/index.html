@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dropdown Menu</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <ul>
+      <li>
+        <a href=""><i class="fa-solid fa-house"></i>Home</a>
+      </li>
+      <li class="hover-news">
+        <a href=""><i class="fa-regular fa-newspaper"></i>News</a>
+
+        <div id="news-content">
+          <ul>
+            <li><a href="">News 1</a></li>
+            <li><a href="">News 2</a></li>
+            <li class="hover-news3">
+              <a href="">News 3</a>
+              <div id="news3-content">
+                <ul>
+                  <li><a href="">Detail 1</a></li>
+                  <li><a href="">Detail 2</a></li>
+                  <li><a href="">Detail 3</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="">News 4</a></li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <a href=""><i class="fa-regular fa-address-book"></i>Contact</a>
+      </li>
+      <li>
+        <a href=""><i class="fa-regular fa-address-card"></i>About</a>
+      </li>
+    </ul>
+  </body>
+</html>
