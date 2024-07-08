@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Direct Child Combinator</title>
+    <style>
+      p b,
+      em {
+        color: tomato;
+      }
+      p > b {
+        font-size: 2em;
+      }
+      p > em {
+        font-size: 2em;
+        color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <p>this is <b>bold</b> and <em>italic</em> paragraph</p>
+
+    <p>
+      this is <span><b>bold</b></span> and
+      <span><em>italic</em> </span> paragraph
+    </p>
+  </body>
+</html>

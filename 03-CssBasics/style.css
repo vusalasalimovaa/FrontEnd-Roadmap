@@ -1,0 +1,15 @@
+input[type="radio"]:checked + label {
+  color: red;
+}
+
+.checkbox:checked + label + p {
+  display: none;
+}
+
+.button::before {
+  content: attr(data-hide);
+}
+
+.checkbox:checked + .button::before {
+  content: attr(data-show);
+}

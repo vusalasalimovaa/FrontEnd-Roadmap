@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attribute Value</title>
+    <style>
+      div[class|="box"] {
+        background-color: chocolate;
+      }
+
+      p[class~="box"] {
+        background-color: blue;
+      }
+
+      h2[class^="bo"] {
+        background-color: cornflowerblue;
+      }
+
+      h3[class$="ox" i] {
+        background-color: chartreuse;
+      }
+
+      h4[class*="box" i] {
+        background-color: darkmagenta;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">box</div>
+    <br />
+    <div class="box-small">box</div>
+    <br />
+    <div class="boxcontent">box</div>
+    <br />
+    <div class="content-box">box</div>
+    <br />
+    <br />
+
+    <p class="box">box2</p>
+    <p class="box small">box2</p>
+    <p class="boxcontent">box2</p>
+    <p class="content box">box2</p>
+    <br />
+    <br />
+
+    <h2 class="box">box3</h2>
+    <h2 class="box small">box3</h2>
+    <h2 class="boxcontent">box3</h2>
+    <h2 class="content box">box3</h2>
+    <h2 class="bo-content">box3</h2>
+    <br />
+    <br />
+
+    <h3 class="box">box4</h3>
+    <h3 class="small_box">box4</h3>
+    <h3 class="bigbox">box4</h3>
+    <h3 class="content box">box4</h3>
+    <h3 class="big-BOX">box4</h3>
+    <br />
+    <br />
+
+    <h4 class="box">box5</h4>
+    <h4 class="small_box">box5</h4>
+    <h4 class="small_box_big">box5</h4>
+    <h4 class="bigbox">box5</h4>
+    <h4 class="content box">box5</h4>
+    <h4 class="top-box-big">box5</h4>
+    <h4 class="big-BOX">box5</h4>
+  </body>
+</html>

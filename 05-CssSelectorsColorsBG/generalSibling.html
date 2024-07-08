@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>General Sibling Combinator</title>
+    <style>
+      h3 ~ p {
+        color: gold;
+      }
+
+      ul li.list2 + li {
+        font-size: 2em;
+      }
+
+      ul li.list2 ~ li {
+        color: chartreuse;
+      }
+
+      ul ~ p {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>list1</li>
+      <li class="list2">list2</li>
+      <li>list3</li>
+      <li>list4</li>
+      <li>list5</li>
+    </ul>
+
+    <p>paragraph 1</p>
+
+    <p>paragraph 2</p>
+
+    <h3>Heading</h3>
+
+    <p>paragraph 3</p>
+
+    <div>div tag</div>
+
+    <p>paragraph 4</p>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Descendant Selectors</title>
+    <style>
+      div em {
+        color: red;
+      }
+      .box .italic1 {
+        font-size: 2em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      this is a div <span>and there is a span in it</span> and
+      <em class="italic1">italic word</em>, <strong>bold word</strong>,
+      <em class="italic1">italic word 2</em>
+    </div>
+  </body>
+</html>

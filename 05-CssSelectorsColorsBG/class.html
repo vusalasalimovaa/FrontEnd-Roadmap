@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Selectors</title>
+    <style>
+      .selector {
+        color: blueviolet;
+      }
+      .memes {
+        font-size: 50px;
+        text-decoration: underline;
+      }
+      .selector.memes {
+        color: cadetblue;
+      }
+      h3.selector.memes {
+        color: blue;
+      }
+      #paragraphy2 {
+        text-decoration: line-through;
+      }
+      p.selector.memes#paragraphy2 {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="selector memes">Class Selectors</div>
+
+    <p class="selector">this is paragraph</p>
+
+    <h3 class="selector memes">Codelikelegend</h3>
+
+    <p class="selector memes" id="paragraphy2">this is paragraph 2</p>
+  </body>
+</html>
