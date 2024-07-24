@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box::after {
+        content: "(" attr(data-after) ")";
+        color: red;
+      }
+      .box::before {
+        content: attr(data-before);
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="box"
+      title="title deyeri"
+      data-id="7"
+      data-after="after"
+      data-before="before"
+    >
+      div tag
+    </div>
+  </body>
+</html>
