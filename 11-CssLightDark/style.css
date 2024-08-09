@@ -1,0 +1,57 @@
+:root {
+  /* &:has([data-color-scheme="light"]) {
+    color-scheme: light;
+  }
+  &:has([data-color-scheme="dark"]) {
+    color-scheme: dark;
+  }
+  &:not(:has([data-color-scheme])) {
+    color-scheme: dark light;
+  } */
+  &:has(input[name="color-scheme"][value="system"]:checked) {
+    color-scheme: dark light;
+  }
+  &:has(input[name="color-scheme"][value="dark"]:checked) {
+    color-scheme: dark;
+  }
+  &:has(input[name="color-scheme"][value="light"]:checked) {
+    color-scheme: light;
+  }
+}
+
+/* body {
+  background: Canvas;
+  color: CanvasText;
+} */
+
+/* h1 {
+  color: #555;
+  @media (prefers-color-scheme: dark) {
+    & {
+      color: #aaa;
+    }
+  }
+} */
+
+/* @media (prefers-color-scheme: dark) {
+  h1 {
+    color: #aaa;
+  }
+} */
+
+h1 {
+  color: light-dark(orange, red);
+}
+
+body {
+  height: 100vh;
+  /* padding: 0;
+  margin: 0; */
+  background: linear-gradient(
+    to bottom,
+    light-dark(#000, #fff),
+    light-dark(#fff, #000)
+  );
+}
+
+/* bug var body de */
