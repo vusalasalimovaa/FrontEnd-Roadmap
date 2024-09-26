@@ -15,3 +15,13 @@ console.log(word1.includes("on"));
 console.log(word2.includes("on"));
 let sentence = "I hope this course is not full of jargon.";
 console.log(sentence.includes("jargon"));
+console.log(Math.floor(Math.random() * 101));
+console.log(Math.floor(Math.random() * 51 + 50));
+console.log(Math.floor(Math.random() * 256));
+let word3 = "JavaScript";
+let index = Math.floor(Math.random() * (word3.length - 1));
+console.log(word3[index]);
+console.log("1 1 1 1 1\n2 1 2 4 8\n3 1 3 9 27\n4 1 4 16 64\n5 1 5 25 125");
+let followingSentence =
+  "You cannot end a sentence with because because because is a conjunction";
+console.log(followingSentence.substr(31, 23));
