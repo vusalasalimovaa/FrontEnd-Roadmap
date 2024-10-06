@@ -1,38 +1,38 @@
 //task 1
-let month = prompt("Enter a month:").toLowerCase(); 
+let monthhh = prompt("Enter a month:").toLowerCase(); 
 
 let days;
 
-if (month === "january") {
+if (monthhh === "january") {
     days = 31;
-} else if (month === "february") {
+} else if (monthhh === "february") {
     days = 28; 
-} else if (month === "march") {
+} else if (monthhh === "march") {
     days = 31;
-} else if (month === "april") {
+} else if (monthhh === "april") {
     days = 30;
-} else if (month === "may") {
+} else if (monthhh === "may") {
     days = 31;
-} else if (month === "june") {
+} else if (monthhh === "june") {
     days = 30;
-} else if (month === "july") {
+} else if (monthhh === "july") {
     days = 31;
-} else if (month === "august") {
+} else if (monthhh === "august") {
     days = 31;
-} else if (month === "september") {
+} else if (monthhh === "september") {
     days = 30;
-} else if (month === "october") {
+} else if (monthhh === "october") {
     days = 31;
-} else if (month === "november") {
+} else if (monthhh === "november") {
     days = 30;
-} else if (month === "december") {
+} else if (monthhh === "december") {
     days = 31;
 } else {
     days = null; 
 }
 
 if (days !== null) {
-    console.log(`${month.charAt(0).toUpperCase() + month.slice(1)} has ${days} days.`);
+    console.log(`${monthhh.charAt(0).toUpperCase() + monthhh.slice(1)} has ${days} days.`);
 } else {
     console.log("Invalid month. Please enter a valid month name.");
 }
@@ -58,7 +58,7 @@ if (monthh === "january") {
     days = 31;
 } else if (monthh === "april") {
     days = 30;
-} else if (month === "may") {
+} else if (monthh === "may") {
     days = 31;
 } else if (monthh === "june") {
     days = 30;
@@ -79,7 +79,7 @@ if (monthh === "january") {
 }
 
 if (days !== null) {
-    console.log(`${monthh.charAt(0).toUpperCase() + month.slice(1)} ${year} has ${days} days.`);
+    console.log(`${monthh.charAt(0).toUpperCase() + monthh.slice(1)} ${year} has ${days} days.`);
 } else {
     console.log("Invalid month. Please enter a valid month name.");
 }
