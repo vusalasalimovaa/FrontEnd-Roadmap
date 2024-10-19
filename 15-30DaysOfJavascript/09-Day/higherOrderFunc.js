@@ -143,7 +143,7 @@ let users = [
   },
   {
     id: 1,
-    username: "Gunel",
+    username: "Ayse",
     age: 18,
     gender: 2,
   },
@@ -177,6 +177,13 @@ const men = users.filter((user) => user.gender === 1);
 console.log(women);
 console.log(men);
 
+const search = (keyword, array) =>
+  array.filter((item) =>
+    item.username.toLowerCase().includes(keyword.toLowerCase())
+  );
+// console.log(users.filter((user) => user.username.includes("ay")));
+console.log(search("AY", users));
+
 //////////////////////////////////////////////
 
 console.log(users.every((user) => user.id === 1));
@@ -188,7 +195,7 @@ console.log(users.some((user) => user.id === 2));
 
 ///////////////////////////////////////////////
 
-const currentUser = users.find((user) => user.id === 4);
+const currentUser = users.find((user) => user.id === 3);
 const currentUser2 = users.findIndex((user) => user.id === 4);
 
 console.log(currentUser);
@@ -219,11 +226,118 @@ console.log(users);
 // users.sort((a, b) => b.username.localeCompare(a.username));
 // console.log(users);
 
-
 // users.sort(function (a, b) {
 //   if (a.username < b.username) return -1;
 //   if (a.username > b.username) return 1;
 //   return 0;
 // });
-
 // console.log(users);
+
+////////////////////////////////////////////////
+
+const isimler = [
+  "Vusala",
+  "Nuray",
+  "Fidan",
+  "Nazenin",
+  "Vusala",
+  "Aygun",
+  "Nazenin",
+  "Vusala",
+];
+
+const countedNames = isimler.reduce((acc, name) => {
+  if (name in acc) {
+    acc[name]++;
+  } else {
+    acc[name] = 1;
+  }
+  return acc;
+}, {});
+
+console.log(countedNames);
+
+////////////////////////////////////////////////////
+
+const items = [
+  {
+    name: "Apple",
+    category: "Fruit",
+  },
+  {
+    name: "Onion",
+    category: "Vegetable",
+  },
+  { name: "Orange", category: "Fruit" },
+  { name: "Lettuce", category: "Vegetable" },
+  { name: "Banana", category: "Fruit" },
+];
+
+let group = "category";
+const sortedItems = items.reduce((acc, item) => {
+  let key = item[group];
+  if (!acc[key]) {
+    acc[key] = [];
+  }
+  acc[key].push(item);
+  return acc;
+}, {});
+
+console.log(sortedItems);
+
+// const groupBy = (array, property) => {
+//   return array.reduce((acc, item) => {
+//     let key = item[property];
+//     if (!acc[key]) {
+//       acc[key] = [];
+//     }
+//     acc[key].push(item);
+//     return acc;
+//   }, {});
+// };
+
+// console.log(groupBy(items, "category"));
+
+///////////////////////////////////////////////
+
+const posts = [
+  {
+    title: "Post 1",
+    tags: ["css", "html"],
+  },
+  {
+    title: "Post 2",
+    tags: ["js", "html"],
+  },
+  {
+    title: "Post 3",
+    tags: ["sql", "python"],
+  },
+  {
+    title: "Post 3",
+    tags: ["node js", "python"],
+  },
+];
+
+const allTags = posts.reduce((acc, post) => [...acc, ...post.tags], []);
+
+const noDublicatedTags = allTags.reduce((acc, curr) => {
+  if (!acc.includes(curr)) {
+    acc.push(curr);
+  }
+  return acc;
+}, []);
+
+console.log(noDublicatedTags);
+
+console.log([...new Set(allTags)]);
+
+// const saylar = [1, 2, 3, 4, 4, 4, 6, 8, 2, 3, 8, 6];
+// const array2 = saylar.reduce((acc, curr) => {
+//   if (!acc.includes(curr)) {
+//     acc.push(curr);
+//   }
+//   return acc;
+// }, []);
+
+// console.log(array2);
