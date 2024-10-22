@@ -161,8 +161,7 @@ console.log(person2);
 /////////////////////////////////////////////
 
 const sumAllNums = (...args) => {
-    console.log(args)
-}
-  
-sumAllNums(1, 2, 3, 4, 5)
-  
+  console.log(args);
+};
+
+sumAllNums(1, 2, 3, 4, 5);
