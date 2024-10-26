@@ -1,0 +1,23 @@
+{
+    "users": [
+        {
+            "firstName":"Vusala",
+            "lastName":"Salimova",
+            "age":20,
+            "major":"PAM"
+        },
+        {
+            "firstName":"Gunel",
+            "lastName":"Ahmedzade",
+            "age":18,
+            "major":"IT"
+        },
+        {
+            "firstName":"Xadica",
+            "lastName":"Veliyeva",
+            "age":21,
+            "major":"History"
+        }
+
+    ]
+}
